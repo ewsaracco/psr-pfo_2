@@ -5,13 +5,28 @@ Este repositorio contiene la entrega de la PFO 2. Es una API REST armada con Fla
 ## Instalación y ejecución
 Se requiere Python 3 instalado.
 
-1. Instalar las dependencias necesarias:
-   `pip install Flask requests`
-2. Clonar el repositorio y levantar el servidor:
-   `python servidor.py`
+1. Clonar el repositorio y acceder a la carpeta del proyecto.
+2. (Recomendado) Crear y activar un entorno virtual para no afectar la instalación global de Python:
+   ```bash
+   python -m venv venv
+   # En Windows:
+   venv\Scripts\activate
+   # En Linux/Mac:
+   source venv/bin/activate
+   ```
+3. Instalar las dependencias necesarias leyendo el archivo adjunto:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Levantar el servidor:
+   ```bash
+   python servidor.py
+   ```
    *(La API queda escuchando en `http://localhost:5000` y el archivo `tareas.db` se crea solo al iniciar la primera ejecución).*
-3. Para probar los endpoints interactuando con la API, abrir otra terminal y ejecutar:
-   `python cliente.py`
+5. Para probar los endpoints interactuando con la API, abrir otra terminal y ejecutar:
+   ```bash
+   python cliente.py
+   ```
 
 ## Endpoints desarrollados
 - **POST /registro**: Recibe `{"usuario": "...", "contraseña": "..."}` y guarda el usuario en la base de datos.
