@@ -1,4 +1,4 @@
-# Trabajo Práctico: PFO 2 - Sistema de Gestión de Tareas (API REST)
+# PFO 2 - Sistema de Gestión de Tareas (API REST)
 
 Este repositorio contiene la entrega de la PFO 2. Es una API REST armada con Flask y SQLite que maneja el registro y login de usuarios hasheando las contraseñas.
 
